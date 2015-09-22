@@ -16,7 +16,8 @@ Install
 3. Fire up a Terminal, the Node Command Prompt or shell and change directory to the root of the Raneto application (where app.js and config.js are)
 4. run `npm install` to install the node dependencies
 5. To start Raneto, run `nodemon ./bin/www` or `npm start`
-6. Visit `http://localhost:3000` in your web browser
+6. Visit `http://localhost:3000` in you web browser
+7. Use `https://stackedit.io/editor` for md file
 
 Note: When running on a live site you'll want to set the `PORT` env variable to `80` so you don't need to add `:3000` to the URL.
 
