@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>{{#meta.title}}{{meta.title}} - {{/meta.title}}{{config.site_title}}</title>
+	{{#meta.description}}<meta name="description" content="{{meta.description}}">{{/meta.description}}
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="shortcut icon" href="/favicon.png">
+	<link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/bower_components/highlightjs/styles/solarized_light.css">
+	<link rel="stylesheet" href="/styles/raneto.css">
+	<link rel="stylesheet" href="/styles/ls-theme.css">
+	{{{config.analytics}}}
+</head>
+<body class="{{body_class}}">
+<div id="fb-root"></div>
+	<script>
+		(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.async=true;
+			js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4";
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>
+	<header class="header">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-12">
+					<a href="/" class="pull-left"><img class="logo" src="{{config.image_url}}/loansolutions-logo.png" alt="{{config.site_title}}"></a>
+					<div style="margin-left: 15px; margin-top: 5px;" class="visible-md visible-lg pull-left">
+						<div data-href="https://www.facebook.com/LoanSolutionsPH" data-width="130px" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true" class="fb-like"></div>
+					</div>
+
+					<ul class="pull-right list-unstyled no-space">
+					<li><a href="https://applicant.loansolutions.ph/amount?amount=0&type=personal-loan" class="btn btn-sm btn-danger">Apply for a loan today!</a></li>
+					</ul>
+
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="container-fluid">
+		{{{ yield }}}
+	</div>
+	<footer class="footer">
+		<div class="container-fluid">
+
+			{{#config.copyright}}
+			<p class="copyright pull-right">{{{config.copyright}}}</p>
+			{{/config.copyright}}
+
+		</div>
+	</footer>
+
+	<script src="/bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="/bower_components/highlightjs/highlight.pack.js"></script>
+	<script src="/bower_components/fitvids/jquery.fitvids.js"></script>
+	<script src="/bower_components/masonry/dist/masonry.pkgd.min.js"></script>
+	<script src="/scripts/raneto.js"></script>
+
+</body>
+</html>
