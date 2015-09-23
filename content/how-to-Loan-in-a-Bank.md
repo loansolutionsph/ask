@@ -4,8 +4,24 @@ Sort: 1
 */
 
 
+![rein](https://657b072aab060d50f8ce-d7abb53cb376b4947d77643d4b4a48d3.ssl.cf1.rackcdn.com/31715_smadown.jpeg)    
+
 One of the quickest ways to address cash problems is bank loaning. The first query that comes to the mind is how to loan in a bank? There are specific requirements needed to obtain a loan. For beginners unfamiliar with bank loans, here is a brief guide on how to loan in a bank:
 
+And flow charts like this:
+
+```flow
+st=>start: Start
+e=>end
+op=>operation: My Operation
+cond=>condition: Yes or No?
+
+st->op->cond
+cond(yes)->e
+cond(no)->op
+```
+
+[google](http://google.com) 
 1. **Assess your needs**
 
   Before anything else, evaluate your needs. What do you need the funds for? How much do you exactly necessitate? Next, assess your capabilities. When can you repay the loan? What resources can you offer as collateral? Then, recall you credit record and credit mark.
