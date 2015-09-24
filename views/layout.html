@@ -6,16 +6,16 @@
 	<title>{{#meta.title}}{{meta.title}} - {{/meta.title}}{{config.site_title}}</title>
 	{{#meta.description}}<meta name="description" content="{{meta.description}}">{{/meta.description}}
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
 	<link rel="shortcut icon" href="/favicon.png">
 	<link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="/bower_components/highlightjs/styles/solarized_light.css">
-	<link rel="stylesheet" href="/styles/raneto.css">
+	<!-- <link rel="stylesheet" href="/styles/raneto.css"> -->
 	<link rel="stylesheet" href="/styles/ls-theme.css">
+	<link rel="stylesheet" href="/styles/ls-stylesheet.css">
 	{{{config.analytics}}}
 </head>
 <body class="{{body_class}}">
-<div id="fb-root"></div>
+	<div id="fb-root"></div>
 	<script>
 		(function(d, s, id) {
 			var js, fjs = d.getElementsByTagName(s)[0];
@@ -26,36 +26,58 @@
 			fjs.parentNode.insertBefore(js, fjs);
 		}(document, 'script', 'facebook-jssdk'));
 	</script>
-	<header class="header">
+
+	<header>
 		<div class="container-fluid">
-			<div class="row">
-				<div class="col-md-12">
-					<a href="/" class="pull-left"><img class="logo" src="{{config.image_url}}/loansolutions-logo.png" alt="{{config.site_title}}"></a>
-					<div style="margin-left: 15px; margin-top: 5px;" class="visible-md visible-lg pull-left">
-						<div data-href="https://www.facebook.com/LoanSolutionsPH" data-width="130px" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true" class="fb-like"></div>
-					</div>
-
-					<ul class="pull-right list-unstyled no-space">
-					<li><a href="https://applicant.loansolutions.ph/amount?amount=0&type=personal-loan" class="btn btn-sm btn-danger">Apply for a loan today!</a></li>
-					</ul>
-
-				</div>
+			<div class="pull-right">
+				<a href="/" class="btn btn-danger">Apply for a loan today!</a>
+			</div>
+			<div class="pull-left">
+				<a href="/"><img src="{{config.image_url}}/loansolutions-logo.png" alt="loansolutions logo" height="30"></a>
+			</div>
+			<div style="margin-left: 15px; margin-top: 5px;" class="visible-md visible-lg pull-left">
+				<div data-href="https://www.facebook.com/LoanSolutionsPH" data-width="130px" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true" class="fb-like"></div>
 			</div>
 		</div>
 	</header>
 
-	<div class="container-fluid">
-		{{{ yield }}}
+			{{{ yield }}}
+
+
+	<div class="footer-container">
+		<footer class="details">
+			<div class="container-fluid">
+				<div class="row">
+				<div class="col-sm-4"><img alt="logo" src="{{config.image_url}}/loansolutions-logo-alt.png" class="logo">
+						<p>LoanSolutions.ph is the largest network of lenders in the Philippines. It facilitates fast and easy access to credit for different financial needs by connecting borrowers to multiple lending partners in single online loan application..</p>
+						{{#config.copyright}}
+						<p>{{{config.copyright}}}</p>
+						{{/config.copyright}}
+
+					</div>
+					<div class="col-sm-4">
+						<address style="margin-top: 70px;">8th Flr, Crown 7 Building, Juan Luna Ave.,<br>Mabolo Cebu City, 6000<br>(032) 231-0463</address>
+						<address>Unit 2006 Cityland Herrera Tower, Rufino cor. Valero Sts., Salcedo Vill.<br>Makati City</address>
+					</div>
+					<div class="col-sm-4">
+						<div class="row">
+							<div style="margin-top: 70px;" class="col-sm-4 col-xs-6">
+								<p><a href="/">Home</a></p>
+								<p><a href="faq">FAQ</a></p>
+								<p><a href="our-story">OUR STORY</a></p>
+								<p><a href="contact">CONTACT US</a></p>
+							</div>
+							<div style="margin-top: 70px;" class="col-sm-4 col-xs-6">
+								<p><a href="loan-advisor">WE'RE HIRING!</a></p>
+								<p><a href="/assets/sitemap.xml" target="_blank">SITEMAP</a></p>
+								<p><a href="terms">TERMS</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
 	</div>
-	<footer class="footer">
-		<div class="container-fluid">
-
-			{{#config.copyright}}
-			<p class="copyright pull-right">{{{config.copyright}}}</p>
-			{{/config.copyright}}
-
-		</div>
-	</footer>
 
 	<script src="/bower_components/jquery/dist/jquery.min.js"></script>
 	<script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -63,6 +85,5 @@
 	<script src="/bower_components/fitvids/jquery.fitvids.js"></script>
 	<script src="/bower_components/masonry/dist/masonry.pkgd.min.js"></script>
 	<script src="/scripts/raneto.js"></script>
-
 </body>
 </html>

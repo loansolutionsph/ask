@@ -1,16 +1,16 @@
 var config = {
 
 	// Your site title (format: page_title - site_title)
-	site_title: 'Have a Money Question? Ask Loansolutions Now | Loansolutions.ph',
+	site_title: 'Knowledgebase',
 
 	// The base URL of your site (can use %base_url% in Markdown files)
 	base_url: '',
 
 	// Used for the "Get in touch" page footer link
-	support_email: '',
+	support_email: 'fdjgkdjfg@sdfsdf.sdf',
 
 	// Footer copyright content
-	copyright: 'Copyright &copy; '+ new Date().getFullYear() +' - <a href="/">LoanSolutions.ph</a>' + '. All Rights Reserved.',
+	copyright: '&copy; '+ new Date().getFullYear() +' <a href="http://raneto.com">LoanSolutions.ph</a>' + ' All Rights Reserved.',
 
 	// Excerpt length (used in search)
 	excerpt_length: 400,
