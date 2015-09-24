@@ -19,6 +19,7 @@ header{
 }
 
 footer{
+  font-size: 14px;
   margin-top: 80px;
   background: #2ccd96;
   color: rgba(255,255,255,0.85);
@@ -39,6 +40,10 @@ a.list-group-item:focus,a.list-group-item:hover,button.list-group-item:focus,but
   color: #009dcd;
   text-decoration: none;
   background-color: rgba(2, 186, 242, 0.2);
+}
+
+.page{
+  margin-bottom: 50px;
 }
 
 @media screen and (min-width: 768px) {
